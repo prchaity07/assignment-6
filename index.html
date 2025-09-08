@@ -62,31 +62,36 @@
 <main class="bg-[#e2f2e7] ">
 
   <!-- Category Section -->
-  <section class="w-11/12 mx-auto h-auto flex justify-between items-center text-center space-y-28">
+  <section class=" mx-auto h-auto flex justify-between items-center text-center ">
     <!-- category btns -->
-    <div class="w-2/12  mx-auto ">
+    <div id="categories" class="w-2/12  mx-auto ">
       <h1>Category</h1>
     </div>
 
-    <div class="w-9/12  mx-auto ">
+    <div id="trees"  class="w-9/12 grid grid-cols-3 gap-4 mx-auto ">
       <h2>Card</h2>
     </div>
 
-    <aside class="bg-white w-1/12  mx-auto">
-      <h2>Cart</h2>
+    <!-- Cart Items -->
+    <aside class="bg-white w-2/12 p-4  mx-auto">
+      <h2 class="font-bold text-xl mb-2">Cart</h2>
+      <ul id="cart-items" class="space-y-1">
+
+      </ul>
+    <p class="mt-4 font-semibold">Total Price: <span id="total">0</span> ৳</p>
     </aside>
   </section>
 
   <!-- About Section -->
   <section class=" mx-auto h-auto w-9/12 my-16 ">
-    <h1 class="font-bold text-3xl text-center my-24">About the Campaign</h1>
+    <h1 class="font-bold text-3xl text-center my-14">About the Campaign</h1>
 
     <div class="flex flex-col gap-7 lg:flex-row justify-center items-center ">
-      <img class="w-[70%] lg:w-auto
-      mx-auto h-auto" src="./assets/about.png" alt="">
+      <img class="w-auto
+      mx-auto h lg:h-auto" src="./assets/about.png" alt="">
       
       <div class="flex flex-col text-start text-[#1F293798] font-medium ">
-        <p class="block lg:hidden text-center">
+        <p class="block text-justify lg:hidden ">
         Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and combat global warming.
       </p>
         <p class="lg:block hidden">
@@ -105,11 +110,61 @@
 
 
   <!--Impact Section -->
-  <section class="bg-[#CFF0DC]">
+  <section class="bg-[#CFF0DC]  flex flex-col items-center justify-between gap-24 py-8">
+    <h2 class="text-center text-4xl font-bold mt-8">Our Impact</h2>
+
+    <div class="flex flex-col md:flex-row gap-6 w-9/12 justify-between items-center text-center ">
+
+      <div class="group w-[80%] h-32 flex flex-col justify-center text-center bg-white hover:bg-[#166534]">
+        <h1 class="text-[#15803D] group-hover:text-[#ceded4] text-4xl font-bold">500K+</h1>
+        <p class="text-[#1F293780] text-xl font-semibold group-hover:text-[#ceded4]">Trees Planted</p>
+      </div>
+
+      <div class="group w-[80%] h-32 flex flex-col justify-center text-center bg-white  hover:bg-[#166534] ">
+        <h1 class="text-[#15803D] group-hover:text-[#ceded4] text-4xl font-bold ">120+</h1>
+        <p class="text-[#1F293780] text-xl font-semibold group-hover:text-[#ceded4]">Communities Involved</p>
+      </div>
+
+      <div class="group w-[80%] h-32 flex flex-col justify-center text-center bg-white hover:bg-[#166534] ">
+        <h1 class="text-[#15803D] group-hover:text-[#ceded4] text-4xl font-bold ">30+</h1>
+        <p class="text-[#1F293780] text-xl font-semibold group-hover:text-[#ceded4] ">Countries Reached</p>
+      </div>
+    </div>
 
   </section>
+
+  <!-- Plant Tree Reg form-->
+   <section class=" bg-[#166534] py-10"> 
+    <h1 class="text-white text-3xl pt-7 md:text-5xl font-bold text-center">Plant a Tree Today</h1>
+
+    <!-- form section -->
+
+    <form class="flex flex-col items-center md:w-7/12 justify-center mx-auto bg-[#15803D] gap-5 mt-10 px-6 pb-10  ">
+      <input class="bg-white w-[50%] p-6 rounded-xl border-none mt-8" placeholder="Your Name" type="text">
+      <input class="bg-white w-[50%] p-6 rounded-xl border-none" placeholder="Your Email Address" type="email">
+    
+      <div class="flex justify-between bg-white w-[50%] p-6 rounded-xl border-none">
+         <label for="">Number of Trees</label>
+      <select id="" name="">
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+      <option value=""></option>
+      </select>
+      </div>
+  
+      <button class=" mb-8 w-[50%] btn text-[#15803D] bg-[#FACC15] rounded-[999px]" type="submit">Donate Now</button>
+  </form>
+   </section>
+  
 </main>
 
+<!-- Footer Section -->
+ <footer class=" bg-[#14532D] text-white mt-12 p-4 text-center ">
+  © 2025 Green Earth. All Rights Reserved.
+</footer>
 
+<!-- JS File Linked Here -->
+ <script src="./script/script.js"></script>
 </body>
 </html>
