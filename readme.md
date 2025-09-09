@@ -30,4 +30,4 @@
 
 - Support ${} for inserting variables or expressions.
 
-- Easier and cleaner than string concatenation with ()"" or +).
+- Easier and cleaner than string concatenation with ("" or +).
