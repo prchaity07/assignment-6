@@ -34,10 +34,10 @@ const updateCart = () => {
         const cartDiv = document.createElement("div");
         
         cartDiv.innerHTML = `
-          <div class="flex  justify-between items-center text-start bg-[#DCFCE7] px-3 py-2 rounded-md mb-2">
-          <ul class="space-y-1 flex flex-col justify-between">
-             <li class =" text-sm font-semibold ">${item.name}</li>
-             <li class="text-xl font-bold opacity-55">৳ ${item.price * item.quantity} * ${item.quantity}</li>
+          <div class="flex w-full mx-auto justify-between gap-7 items-center text-start bg-[#DCFCE7] px-3 py-2 rounded-md mb-2">
+          <ul class="space-y-1  flex flex-col justify-between">
+             <li class =" text-xl font-semibold ">${item.name}</li>
+             <li class="text-xl font-semibold opacity-55">৳ ${item.price * item.quantity} * ${item.quantity}</li>
           </ul>
           <button onclick="removeFromCart('${item.id}')" class="text-red-500 font-bold">❌</button>
         </div>
