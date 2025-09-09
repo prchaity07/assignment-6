@@ -71,22 +71,45 @@
     </div>
     </div>
 
-    <div id="trees-container"  class="w-8/12 grid lg:grid-cols-3 gap-4 mx-auto ">
+    <!-- all trees -->
+    <div id="trees-container"  class="w-9/12 grid lg:grid-cols-3 gap-4 mx-auto ">
 
     
       
       
     </div>
 
+    
+
     <!-- Cart Items -->
     <aside class="bg-white w-auto py-4 px-9  mx-auto">
-      <h2 class="font-bold text-xl mb-2">Cart</h2>
+      <h2 class="font-bold text-xl mb-2">Your Cart (<span id="cart-count">0</span> items)</h2>
       <ul id="cart-items" class="space-y-1">
 
       </ul>
-    <p class="mt-4 font-semibold">Total Price: <span id="total">0</span> ৳</p>
+    <p class="mt-4 font-semibold">Total Price: <span id="total">0 ৳</span></p>
     </aside>
   </section>
+
+    <!-- modal  -->
+    
+      <!-- Open the modal using ID.showModal() method -->
+<dialog id="trees-modal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+
+    <div id="details-container" class="space-y-5">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    </div>
+
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
   <!-- About Section -->
   <section class=" mx-auto h-auto w-9/12 my-16 ">
