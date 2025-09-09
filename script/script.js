@@ -34,19 +34,20 @@ const updateCart = () => {
         const cartDiv = document.createElement("div");
         
         cartDiv.innerHTML = `
-        <ul class="space-y-1 flex flex-col justify-between items-center bg-[#DCFCE7] px-3 py-2 rounded-md">
-             <li>${item.name} x ${item.quantity} </li>
-        <li>${item.price * item.quantity}৳</li>
-          
-      </ul>
-      <button onclick="removeFromCart('${item.id}')" class="text-red-500 font-bold"> ❌</button>
+          <div class="flex  justify-between items-center text-start bg-[#DCFCE7] px-3 py-2 rounded-md mb-2">
+          <ul class="space-y-1 flex flex-col justify-between">
+             <li class =" text-sm font-semibold ">${item.name}</li>
+             <li class="text-xl font-bold opacity-55">৳ ${item.price * item.quantity} * ${item.quantity}</li>
+          </ul>
+          <button onclick="removeFromCart('${item.id}')" class="text-red-500 font-bold">❌</button>
+        </div>
         
         `;
         cartItemsContainer.appendChild(cartDiv);
     });
 
     
-    totalPrice.textContent = `${total} ৳`;
+    totalPrice.textContent = ` ৳ ${total} `;
 }
 
 // Spinner
