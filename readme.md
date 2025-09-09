@@ -1,6 +1,7 @@
+
 ## 1. Difference between var, let, and const
 
--  var - Function-scoped, can be redeclared and updated.
+- var - Function-scoped, can be redeclared and updated.
 
 - let - Block-scoped, can be updated but not redeclared in the same scope.
 

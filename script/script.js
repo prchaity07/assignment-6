@@ -39,7 +39,7 @@ const updateCart = () => {
              <li class =" text-xl font-semibold ">${item.name}</li>
              <li class="text-xl font-semibold opacity-55">৳ ${item.price * item.quantity} * ${item.quantity}</li>
           </ul>
-          <button onclick="removeFromCart('${item.id}')" class="text-red-500 font-bold">❌</button>
+          <button onclick="removeFromCart('${item.id}')" class="text-red-500 font-bold cursor-pointer">❌</button>
         </div>
         
         `;
@@ -149,7 +149,7 @@ const displayTrees = (trees) => {
                 <img src="${tree.image}" alt="" class="w-full h-60 object-cover rounded-lg">
                 <div class="flex-1 flex flex-col justify-between mt-3">
                     <div>
-                        <h2 onclick="loadTreesDetail('${tree.id}')" class="text-2xl font-semibold text-[#1F2937] cursor-pointer">${tree.name}</h2>
+                        <h2 onclick="loadTreesDetail('${tree.id}')" class="text-2xl font-semibold text-[#1F2937] hover:bg-[#0c5025] hover:text-white rounded-md p-2 cursor-pointer">${tree.name}</h2>
                         <p class="font-normal text-[1rem] text-[#1F2937] mt-2 line-clamp-3">${tree.description}</p>
                     </div>
                     <div>
@@ -157,7 +157,7 @@ const displayTrees = (trees) => {
                             <p class="bg-[#DCFCE7] text-[#15803D] text-xl font-semibold rounded-3xl px-5 py-1">${tree.category}</p>
                             <p class=" text-xl font-semibold  text-[#1F2937]">৳<span>${tree.price}</span></p>
                         </div>
-                        <button onclick="addToCart('${tree.id}', '${tree.name}', ${tree.price})" class="bg-[#15803D] w-full py-3 text-xl text-white font-semibold rounded-full mt-3">Add to Cart</button>
+                        <button onclick="addToCart('${tree.id}', '${tree.name}', ${tree.price})" class="bg-[#15803D] cursor-pointer w-full py-3 text-xl text-white font-semibold rounded-full mt-3 hover:bg-[#CFF0DC] hover:text-[#15803D]">Add to Cart</button>
                     </div>
                 </div>
             </div>
