@@ -143,7 +143,9 @@ const displayTrees = (trees) => {
     trees.forEach(tree => {
         const card = document.createElement("div");
         card.innerHTML = `
+            
             <div class="flex flex-col bg-white px-5 py-4 rounded-lg h-[100%] text-start">
+            
                 <img src="${tree.image}" alt="" class="w-full h-60 object-cover rounded-lg">
                 <div class="flex-1 flex flex-col justify-between mt-3">
                     <div>
@@ -152,8 +154,8 @@ const displayTrees = (trees) => {
                     </div>
                     <div>
                         <div class="flex justify-between items-center mt-3">
-                            <p class="bg-[#DCFCE7] text-[#15803D] rounded-3xl px-5 py-1">${tree.category}</p>
-                            <p class="text-[14px] font-semibold text-[#1F2937]"><span>${tree.price}</span>৳</p>
+                            <p class="bg-[#DCFCE7] text-[#15803D] text-xl font-semibold rounded-3xl px-5 py-1">${tree.category}</p>
+                            <p class=" text-xl font-semibold  text-[#1F2937]">৳<span>${tree.price}</span></p>
                         </div>
                         <button onclick="addToCart('${tree.id}', '${tree.name}', ${tree.price})" class="bg-[#15803D] w-full py-3 text-xl text-white font-semibold rounded-full mt-3">Add to Cart</button>
                     </div>
